@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.spacedHeader{
+}
+
+.calculatorSpace{
+    display: flex;
+}
+
+.header{
+    top: 0;
+    height: 100px;
+    box-shadow: 0 0 5px;
+    position: fixed;
+    width: 100%;
+    font-family: sans-serif;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav{
+    background-color: #D9D9D9;
+    width: 200px;
+    height: 64px;
+    border-radius: 100rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header nav ul{
+    display: flex;
+    gap: 50px;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+aside{
+    transform: translateX(-1000px);
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    background-color: #d9d9d963;
+}
+
+.HistoryBox{
+    margin-top: 120px;
+}
+
+.section1{
+    position: fixed;
+    bottom: 10%;
+    left: 20%;
+    right: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.section1 input{
+    width: 60vw;
+    height: 50px;
+    padding: 20px;
+}
+
+.send{
+    border-radius: 100rem;
+    border: none;
+    width: 60px;
+    height: 60px;
+}
+
+.section2{
+    overflow: auto;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-left: auto;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.coloredText{
+    background-color: #5c575718;
+    border: none;
+}
+
+.clientAi, .solveAi{
+    display: flex;
+    gap: 5px;
+}
+
+.clientAi{
+    flex-direction: row-reverse;
+}
+
+.convo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.chatBox{
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.262);
+}
+
+.solveAi p, .clientAi p{
+    background-color: #219EBC;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    border-radius: 1rem;
+}
+
+.solveAi{
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.clientAi{
+    animation: reversefadeIn 0.3s ease-in-out;
+}
+
+.clientAi p{
+    color: white;
+}
+
+.clientAi p{
+    background-color: #023047;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 0.4;
+        translate: -100px;
+    }
+}
+
+@keyframes reversefadeIn {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 0.4;
+        translate: 100px;
+    }
+
+}
+
+.faintExample{
+    opacity: 0.4;
+}

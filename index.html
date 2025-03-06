@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Flexisaf Calculator</title>
+</head>
+<body>
+    <aside>
+        <div class="HistoryBox">
+        <h1>History</h1>
+    </div>
+    </aside>
+
+    <div class="spacedHeader">
+   <header class="header">
+    <div class="darkmode">
+        <i class="fa-solid fa-mountain-sun"></i>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="chat.html">Chat</a></li>
+            <li><a href="#">Regular</a></li>
+        </ul>
+    </nav>
+
+    <div class="menu">
+        <i class="fa-solid fa-compass"></i>
+    </div>
+   </header>
+</div>
+
+<main>
+
+    <section class="theSection">
+    <div class="calculatorSpace">
+        <!-- Start -->
+         <div class="theMainSpace">
+        
+            <div class="theBox">
+            <input id="numberBox" type="text" class="numberBox">
+            </div>
+
+    <div class="differentButtons">
+        <div class="topButtons">
+            <button class="calculation" value="+" id="add">+</button>
+            <button class="calculation" value="-" id="substract">-</button>
+            <button class="calculation" value="*" id="multiply">*</button>
+            <button class="calculation" value="/" id="divide">/</button>
+        </div>
+
+        <div class="middleButtons">
+        
+        <div class="gridBurrons">
+            <button class="number" value="1">1</button>
+            <button class="number" value="2">2</button>
+            <button class="number" value="3">3</button>
+            
+            <button class="number" value="4">4</button>
+            <button class="number" value="5">5</button>
+            <button class="number" value="6">6</button>
+
+            <button  class="number" value="7">7</button>
+            <button class="number" value="8">8</button>
+            <button class="number" value="9">9</button>
+        </div>
+
+        <div class="sideButton">
+            <button class="ac">AC</button>
+            <button class="equate">=</button>
+        </div>
+    </div>
+
+    </div>
+    
+</div>
+    <!-- End -->
+    </div>
+</section>
+
+</main>
+</body>
+
+<!-- <script>
+    const buttons = document.getElementsByTagName('button');
+    const numberBox = document.getElementById('numberBox');
+
+    numberBox.value = '';
+    function calculate(){
+        numberBox.value=''
+        for(let i = 0; i < buttons.length; i++){
+            buttons[i].addEventListener('click', () => {
+                numberBox.value += buttons[i].value;
+                if(buttons[i].classList.contains('equate')){
+                    buttons[i].value = eval(numberBox.value);
+                    numberBox.value = buttons[i].value;
+                    buttons[i].value = 0;
+                }
+                else if(buttons[i].classList.contains('ac')){ 
+                    numberBox.value = ''
+                    buttons[i].value = 0;
+                }
+            })
+        }
+    }
+
+    calculate();
+
+</script> -->
+<script src="https://kit.fontawesome.com/84460ab161.js" crossorigin="anonymous"></script>
+</html>
