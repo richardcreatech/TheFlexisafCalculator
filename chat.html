@@ -6,6 +6,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Flexisaf Calculator</title>
+    <style>
+        *{
+            transition: all 0.1s ease-in-out;
+        }
+
+        .chatStyled{
+            width: 60px;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            border-radius: 10rem;
+        }
+        
+        .chatStyled:nth-of-type(1){
+            background-color: black;
+        }
+       
+        .chatStyled:nth-of-type(2){
+            background-color: transparent;
+        }
+
+        .chatStyled:nth-of-type(2):hover{
+            background-color: black;
+        }
+        
+        .whiteChat{
+            color: #eee;
+        }
+
+
+        .myChat{
+            color: black;
+        }
+
+        .myChat:hover{
+            color: #eee;
+        }
+    </style>
 </head>
 <body>
     <div class="welcomeCard">
@@ -54,8 +93,8 @@
 
     <nav>
         <ul>
-            <li><a href="chat.html">Chat</a></li>
-            <li><a href="index.html">Regular</a></li>
+            <li class="chatStyled" ><a class="whiteChat" href="chat.html">Chat</a></li>
+            <li class="chatStyled" ><a class="whiteChat myChat" href="index.html">Regular</a></li>
         </ul>
     </nav>
 
